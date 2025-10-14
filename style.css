@@ -1558,6 +1558,43 @@ footer {
     color: #000
 }
 
+.about-section-container, .education-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 5%;
+}
+
+.info-dp-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+}
+
+.about-info p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.education-content {
+  text-align: left;
+}
+
+.edu-card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.edu-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+
 @media screen and (max-width:1920px) {
     html {
         font-size: 60%
