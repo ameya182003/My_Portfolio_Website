@@ -1869,6 +1869,10 @@ footer {
         font-size: 50%
     }
 
+    .about-section-container { /* <<< ADD THIS SECTION HERE */
+        padding-top: 80px; 
+    }
+
     .text-content {
         padding-left: 0;
         width: 80%
