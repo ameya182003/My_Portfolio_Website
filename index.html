@@ -66,6 +66,12 @@
             </a>
           </li>
 
+          <li class="education" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="400">
+            <a href="#education" aria-label="education menu button">
+              &#60;/Education&#62;
+            </a>
+          </li>
+
           <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
               &#60;/Skills&#62;
@@ -109,6 +115,13 @@
             &#60;/AboutMe&#62;
           </a>
         </li>
+
+        <li id="education-mobile-tab" class="mobile-navbar-tabs-li education" onclick="hidemenubyli()">
+          <a href="#education" tabindex="0" aria-label="education menu button">
+            &#60;/Education&#62;
+          </a>
+        </li>
+
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
           <a href="#skills" tabindex="0" aria-label="skills menu button">
             &#60;/Skills&#62;
@@ -193,12 +206,11 @@
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
           I enjoy working with dynamic datasets, collaborating on analytical projects, and developing impactful data solutions. </p>
 
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:ameyamodak26@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
+          <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+             <button class="letsTalkBtn" onclick="openEmail()">
+             <p class="letsTalkBtn-text">Let's Talk!</p>
+             <span class="letsTalkBtn-BG"></span>
+             </button>
           <div class="setting-container" id="setting-container">
             <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
 
@@ -225,84 +237,83 @@
     </section>
     <!-- landing page ends here -->
     <section class="about-section-container" id="about" data-aos="fade-up">
-  <div class="about-section">
-    <div class="section-heading">
-      <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-        &#60;/AboutMe&#62;
-      </h2>
-      <p class="sectionHeadingP"></p>
-    </div>
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
 
-    <div class="info-dp-section">
-      <div class="about-info" style="flex: 1; text-align: justify; padding-right: 40px;">
-        <p tabindex="0">
-          I'm <b>Ameya Prakash Modak</b>. I graduated in <b>May 2025</b> with a <b>Bachelor of Engineering (B.E.)</b> degree in <b>Computer Science Engineering and Data Science</b> from 
-          <b>Vidyavardhini's College of Engineering and Technology</b>, achieving a <b>CGPA of 8.5</b>. 
-          I'm a passionate data analyst with expertise in <b>Excel</b>, <b>SQL</b>, <b>Python</b>, and <b>Power BI</b> — skilled at transforming raw data into actionable insights using
-          <b>data visualization</b>, <b>statistical analysis</b>, and <b>machine learning</b>.
-        </p>
-        <br />
-        <p tabindex="0">
-          My expertise in advanced analytical techniques allows me to identify patterns, trends, and relationships within complex datasets,
-          enabling businesses to make informed, data-driven decisions.
-        </p>
-        <br />
-        <p tabindex="0">
-          I am dedicated to continuous learning and applying innovative solutions to real-world problems, bridging the gap between
-          data and actionable insights.
-        </p>
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              I'm Ameya Prakash Modak. I live in Mumbai and graduated in May 2025 with a Bachelor of Engineering (B.E.) Degree in Computer Science Engineering and Data Science from Vidyavardhini's College of Engineering and Technology. I'm a passionate Data Analyst with expertise in Excel, SQL, Python, and Power BI skilled at transforming raw data into actionable insights using data visualization, statistical analysis, and machine learning.
+            </p>
+            <br />
+            <p tabindex="0">
+              My expertise in advanced analytical techniques allows me to identify patterns, trends, and relationships within complex datasets, enabling businesses to make informed, data-driven decisions.
+            </p>
+            <br />
+            <p tabindex="0">
+              I am dedicated to continuous learning and applying innovative solutions to real-world problems, bridging the gap between data and actionable insights.
+            </p>
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
 
-        <!-- Resume Button -->
-        <button class="resume-btn" id="resume-btn" onclick="openURL()">
-          <div class="sign">
-            <svg viewBox="0 0 640 512">
-              <path
-                d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-            </svg>
+        <div class="text">Resume</div>
+      </button>
           </div>
-          <div class="text">Resume</div>
-        </button>
-      </div>
 
-      <div class="dp" data-aos="fade-left" style="flex: 1; text-align: center;">
-        <img src="src/webp/profile_photo.jpg" alt="Ameya Modak"
-          style="width: 80%; max-width: 350px; height: auto; border-radius: 12px; object-fit: cover;" />
+          <div class="dp" data-aos="fade-up">
+            <img src="src/webp/profile_photo.jpg" alt="Ameya Modak" tabindex="0" aria-label="image of ameya" style="width: 87%; height: 77%;" />
+          </div>          
+          </div>          
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
     <!-- about section ends  -->
-    <section class="education-section-container" id="education" data-aos="fade-up">
-  <div class="education-section">
-    <div class="section-heading">
-      <h2 class="section-heading-article" tabindex="0" aria-label="Education heading">
-        &#60;/Education&#62;
-      </h2>
-      <p class="sectionHeadingP"></p>
-    </div>
+    
+    <section class="education-section-container" id="education">
+      <div class="education-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Education heading">
+            &#60;/Education&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
 
-    <div class="education-content" style="display: flex; flex-direction: column; gap: 20px; max-width: 900px; margin: auto;">
-      <div class="edu-card" style="background: rgba(255,255,255,0.05); padding: 20px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-        <h3 style="margin-bottom: 8px;">Bachelor of Engineering (B.E.) in Computer Science Engineering and Data Science</h3>
-        <p style="opacity: 0.85;">Vidyavardhini's College of Engineering and Technology — University of Mumbai</p>
-        <p style="opacity: 0.7;">Graduating: May 2025 | CGPA: 8.5 / 10</p>
-      </div>
+        <div class="education-timeline-wrapper">
+          
+          <div class="education-box" data-aos="fade-up" data-aos-delay="100">
+            <article class="education-heading">Bachelor of Engineering (B.E.) in Computer Science Engineering & Data Science</article>
+            <p class="education-institution">Vidyavardhini's College of Engineering and Technology, Mumbai University</p>
+            <p class="education-details">2021 – 2025 | CGPA: 8.50</p>
+          </div>
+          
+          <div class="education-box" data-aos="fade-up" data-aos-delay="200">
+            <article class="education-heading">HSC (Higher Secondary Certificate)</article>
+            <p class="education-institution">Ramnivas Ruia Junior College, Mumbai</p>
+            <p class="education-details">2019 – 2021 | Percentage: 93.17%</p>
+          </div>
+          
+          <div class="education-box" data-aos="fade-up" data-aos-delay="300">
+            <article class="education-heading">SSC (Secondary School Certificate)</article>
+            <p class="education-institution">Dr. Antonio Da Silva Technical High School, Mumbai</p>
+            <p class="education-details">2019 | Percentage: 89.20%</p>
+          </div>
 
-      <div class="edu-card" style="background: rgba(255,255,255,0.05); padding: 20px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-        <h3 style="margin-bottom: 8px;">Higher Secondary Education (HSC)</h3>
-        <p style="opacity: 0.85;">Maharashtra State Board</p>
-        <p style="opacity: 0.7;">Year: 2021 | Percentage: 86%</p>
+        </div>
       </div>
+    </section>
 
-      <div class="edu-card" style="background: rgba(255,255,255,0.05); padding: 20px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-        <h3 style="margin-bottom: 8px;">Secondary Education (SSC)</h3>
-        <p style="opacity: 0.85;">Maharashtra State Board</p>
-        <p style="opacity: 0.7;">Year: 2019 | Percentage: 89%</p>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- education section ends  -->
+
     <section class="skills-section-container" id="skills">
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
@@ -399,6 +410,7 @@
               </div>
             </div>
           </div>
+          
 
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box5" id="project-box5">
@@ -428,7 +440,6 @@
             </div>
           </div>
 
-          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
@@ -456,6 +467,8 @@
               </div>
             </div>
           </div>
+
+          
           <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box2" id="project-box2">
@@ -484,7 +497,7 @@
               </div>
             </div>
           </div>
-          
+          <!-- ---------------------- -->
         </div>
       </div>
     </section>
@@ -564,10 +577,17 @@
   </script>
 
   <script>
+    // Function for the Resume button
     function openURL() {
-      var url = "https://drive.google.com/file/d/1DjG_VO32dQblb1UmFitD-3W1GnZilNUr/view?usp=drivesdk";
+      var url = "https://drive.google.com/file/d/1rOQPH2CTi9pR4AEisVT6YCXfcrSQWz9m/view?usp=sharing";
 
       window.open(url, "_blank");
+    }
+
+    // New function for the Let's Talk button
+    function openEmail() {
+      var email = "mailto:ameyamodak26@gmail.com";
+      window.location.href = email;
     }
   </script>
 
