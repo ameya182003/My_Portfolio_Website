@@ -534,7 +534,7 @@ noscript {
 
 .dp::after,
 .dp::before {
-    height: 300px;
+    height: 388px;
     z-index: -2;
     content: ""
 }
@@ -1013,7 +1013,8 @@ noscript {
 }
 
 .about-info p {
-    line-height: 25px
+    line-height: 25px;
+    text-align: justify;
 }
 
 .dp {
@@ -1038,6 +1039,64 @@ noscript {
 
 .dp:hover::before {
     transform: translate(-20px, -20px)
+}
+
+/* New styles for the Education section */
+
+.education-section-container {
+    padding-top: 150px; /* Consistent spacing with other sections */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-section {
+    width: 60%; /* Consistent width with .about-section and .skills-section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-timeline-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.education-box {
+    padding: 20px;
+    border: 1px solid var(--tech-stack-box-border-color);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+}
+
+.education-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-light-blue); /* Use an existing color variable for emphasis */
+    margin-bottom: 5px;
+}
+
+.education-institution {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.education-details {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-gray);
 }
 
 .skills-section-container {
@@ -1558,43 +1617,6 @@ footer {
     color: #000
 }
 
-.about-section-container, .education-section-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 5%;
-}
-
-.info-dp-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: auto;
-  gap: 40px;
-}
-
-.about-info p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-.education-content {
-  text-align: left;
-}
-
-.edu-card h3 {
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-.edu-card p {
-  font-size: 0.95rem;
-  color: #ddd;
-}
-
-
 @media screen and (max-width:1920px) {
     html {
         font-size: 60%
@@ -1612,6 +1634,7 @@ footer {
         font-size: 60%
     }
 
+    .education-section,
     .projects-section-div,
     .skills-section,
     .text-content {
@@ -1975,6 +1998,7 @@ footer {
     }
 
     .about-section,
+    .education-section,
     .projects-section-div,
     .skills-section {
         width: 80%
